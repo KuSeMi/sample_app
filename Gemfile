@@ -16,6 +16,8 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
+gem 'carrierwave', '~> 1.3', '>= 1.3.1'
+gem 'mini_magick', '~> 4.9', '>= 4.9.3'
 gem 'bootsnap', '>= 1.1.0', require: false
 
 group :development, :test do
@@ -42,6 +44,7 @@ end
 
 group :production do
   gem 'pg'
+  gem 'fog', '~> 2.1'
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
